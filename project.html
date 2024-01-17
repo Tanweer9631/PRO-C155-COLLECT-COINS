@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+  <script src="Game.js"></script>
+</head>
+<body>
+  <a-scene physics="gravity: 0 -9.8 0">
+    <a-entity id="coin" geometry="primitive: box" material="color: gold" position="-1 1.5 -3" static-body></a-entity>
+    <a-entity id="fish" geometry="primitive: sphere" material="color: #3498db" position="1 1.5 -3" static-body></a-entity>
+    <a-entity id="scubaDiver" geometry="primitive: box" material="color: red" position="0 1.6 0" dynamic-body="mass: 0" game-play></a-entity>
+  </a-scene>
+</body>
+</html>
